@@ -1,0 +1,13 @@
+#编辑.gitignore文件(vim .gitignore)
+
+#忽略所有文件，注意放在开头
+/*
+#除Reverse文件夹外
+!/Reverse
+#除PWN文件夹外
+!/PWN
+#追踪所有的.md文件
+!/*.md
+
+!/*.gitignore
+#总的效果就是git只跟踪Reverse和PWN两个文件夹 和所有.md文件
