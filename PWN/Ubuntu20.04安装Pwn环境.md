@@ -22,6 +22,15 @@ sudo apt-get install vim
 
 ### Pwntools安装
 
+在ubuntu16.04中 多一步，要先讲`pip`版本升级
+
+```
+wget https://bootstrap.pypa.io/pip/3.5/get-pip.py
+python3 get-pip.py
+```
+
+
+
 官方文档 安装：
 
 ```
@@ -86,7 +95,7 @@ sudo apt-get install "binfmt*"
 peda/pwngdb/gef，这是三个常见的gdb的三个插件，配合gdb使用可以提升调试效率
 
 ```
-git clone https://github.com/pwndbg/pwndbg
+git clone https://github.com/pwndbg/pwndbg   # 若是被墙 使用 git clone git://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
 ```
@@ -149,3 +158,23 @@ context.terminal = ['tmux','splitw','-h']  #exp的配置，需要在tmux运行 e
 
 [配置tmux鼠标操作_DY的博客-CSDN博客_tmux 鼠标](https://blog.csdn.net/weixin_41677877/article/details/90004300)
 
+
+
+### 安装Fria_code字体
+
+```
+$ sudo apt install fonts-firacode
+```
+
+
+
+### one_gadget安装
+
+one_gadget就是用来去查找动态链接库里execve("/bin/sh", rsp+0x70, environ)函数的地址的，专职。
+
+```
+sudo apt-get install ruby
+sudo gem install one_gadget
+```
+
+![](https://ms-study.oss-cn-chengdu.aliyuncs.com/Binary_study/RE/Snipaste_2021-11-18_20-20-51.png)

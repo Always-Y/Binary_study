@@ -57,6 +57,8 @@
 
 https://www.cnblogs.com/Rookle/p/12871878.html
 
+简单总结：就是在64位的机器上，当你要调用printf或是system时，请保证`rsp&0xf==0`，说人话就是16字节对齐，最后4比特为0。当不满足上述条件的时候就报错。
+
 ## EXP
 
 ```python
