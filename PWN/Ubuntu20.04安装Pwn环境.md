@@ -178,3 +178,33 @@ sudo gem install one_gadget
 ```
 
 ![](https://ms-study.oss-cn-chengdu.aliyuncs.com/Binary_study/RE/Snipaste_2021-11-18_20-20-51.png)
+
+
+
+### PatchELF 安装
+
+```shell
+sudo apt-get update
+sudo apt-get install patchelf
+```
+
+
+
+###  pwndbg+pwndbg联合使用
+
+#### [Reference](https://lantern.cool/note-tool-pwndbg-pwngdb/)
+
+#### 安装pwndbg
+
+见前文
+
+#### 安装pwngdb
+
+```
+cd ~/
+git clone https://github.com/scwuaptx/Pwngdb.git
+cp ~/Pwngdb/.gdbinit ~/
+```
+
+
+
